@@ -1,8 +1,8 @@
 version: 0.0
 os: linux
 files:
- - source: script/newcode
-   destination: /var/www/html
+ - source: /var/lib/jenkins/workspace/Java-Web-App/webapp/target/webapp.war
+   destination: /opt/apache-tomcat-8.5.39/webapps
 hooks:
  BeforeInstall:
    - location: script/install_dependencies.sh
