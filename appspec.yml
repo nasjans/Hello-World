@@ -9,7 +9,7 @@ hooks:
      timeout: 300
      runas: root
  AfterInstall:
-   - location: scripts/install_dependencies01.sh
+   - location: scripts/change_permissions.sh
      timeout: 300
      runas: root
  ApplicationStart:
@@ -17,7 +17,7 @@ hooks:
      timeout: 300
      runas: root
 ApplicationStop:
-    - location: scripts/stop_server.sh
+    - location: scripts/stop_application.sh
       timeout: 300
       runas: root
 
