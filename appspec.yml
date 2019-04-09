@@ -5,14 +5,14 @@ files:
    destination: /opt/apache-tomcat-8.5.39/webapps
 hooks:
  BeforeInstall:
-   - location: script/install_dependencies.sh
+   - location: scripts/install_dependencies.sh
      timeout: 300
      runas: root
  AfterInstall:
-   - location: script/install_dependencies01.sh
+   - location: scripts/install_dependencies01.sh
      timeout: 300
      runas: root
  ApplicationStart:
-   - location: script/start_server.sh
+   - location: scripts/start_application.sh
      timeout: 300
 runas: root
