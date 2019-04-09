@@ -4,20 +4,13 @@ files:
  - source: /var/lib/jenkins/workspace/Java-Web-App/webapp/target/webapp.war
    destination: /opt/apache-tomcat-8.5.39/webapps
 hooks:
- BeforeInstall:
-   - location: scripts/install_dependencies.sh
-     timeout: 300
-     runas: root
- AfterInstall:
-   - location: scripts/change_permissions.sh
-     timeout: 300
-     runas: root
- ApplicationStart:
-   - location: scripts/start_application.sh
-     timeout: 300
-     runas: root
-ApplicationStop:
-    - location: scripts/stop_application.sh
+
+BeforeInstall:
+    - location: deploy/before_install
+      timeout: 300
+      runas: root
+  AfterInstall:
+    - location: deploy/restart_server
       timeout: 300
       runas: root
 
