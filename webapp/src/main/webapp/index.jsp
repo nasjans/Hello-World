@@ -1,6 +1,4 @@
-<h1> Hello,  !!! </h1>
-<h2> Test  Application </h2>
-<h3> 09-April-2019 </h3>
+
 
 
 
@@ -11,12 +9,14 @@
 
 <html>
    <head>
-     <h4> <title>Display Current Date & Time</title>  </h4>
+     <h4> <title> Test  Application </title>  </h4>
+      <h5> 09-April-2019 </h5>
    </head>
    
    <body>
       <center>
-         <h1>Display Current Date & Time</h1>
+         <h1> Test  Application</h1>
+         <h2> 09-April-2019 </h2>
       </center>
       <%
          Date date = new Date();
