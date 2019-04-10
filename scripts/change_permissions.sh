@@ -1,2 +1,7 @@
+# Pull base image 
 #!/bin/bash
-tomcatup
+From tomcat:8-jre8 
+
+# Maintainer 
+MAINTAINER "m.nawasnas@gmail.com" 
+COPY ./webapp.war /usr/local/tomcat/webapps
