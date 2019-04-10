@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /opt/codedeploy-agent/deployment-root/92125310-5abd-42e2-8f32-2e5905be675a/d-HVVK4TM9Z/deployment-archive/webapp/target/webapp/
+    destination:/opt/apache-tomcat-8.5.39/webapps/webapp
 
 hooks:
  
