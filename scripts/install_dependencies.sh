@@ -1,4 +1,3 @@
 # scripts/install_dependencies
 #!/bin/bash
-sudo -i
-tomcatdown
+sudo echo 1 >/proc/sys/vm/drop_caches
