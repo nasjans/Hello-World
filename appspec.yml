@@ -1,9 +1,14 @@
 version: 0.0
 os: linux
 files:
-  - source: /opt/apache-tomcat-8.5.39/webapps/webapp/index.jsp
+  - source: /
     destination: /opt/apache-tomcat-8.5.39/webapps/webapp/
 hooks:
+ 
+ ApplicationStop:
+    - location: scripts/stop_server.sh
+      timeout: 300
+      runas: root
   BeforeInstall:
     - location: scripts/install_dependencies.sh
       timeout: 300
@@ -16,7 +21,4 @@ hooks:
     - location: scripts/start_server.sh
       timeout: 300
       runas: root
-  ApplicationStop:
-    - location: scripts/stop_server.sh
-      timeout: 300
-      runas: root
+  
