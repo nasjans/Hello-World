@@ -1,7 +1,7 @@
 version: 0.0
 os: linux
 files:
-  - source: /var/lib/jenkins/workspace/Java-Web-App/webapp/target/webapp.war 
+  - source: /
     destination: /opt/apache-tomcat-8.5.39/webapps/
 
 hooks:
