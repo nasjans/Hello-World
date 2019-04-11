@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /opt/apache-tomcat-8.5.39/webapps/
+    destination: /opt/apache-tomcat-8.5.39/webapps/webapp
 
 hooks:
  
