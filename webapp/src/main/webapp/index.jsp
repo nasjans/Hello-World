@@ -15,8 +15,8 @@
    
    <body>
       <center>
-         <h1> Test  Application</h1>
-         <h2> 09-April-2019 </h2>
+         <h1> Java Test  Application</h1>
+         <h2> 11-April-2019 </h2>
       </center>
       <%
          Date date = new Date();
