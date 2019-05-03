@@ -15,7 +15,8 @@
    <body>
       <center>
          <h1> Java Test  Application</h1>
-         <h2> 03-May-2019 </h2>
+         <h2> B/G </h2>
+         <h3> 03-May-2019 </h3>
       </center>
       <%
          Date date = new Date();
